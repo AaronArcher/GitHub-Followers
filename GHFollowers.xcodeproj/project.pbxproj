@@ -15,6 +15,11 @@
 		EE11F25728C4987C00D090DE /* FavouritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11F25628C4987C00D090DE /* FavouritesListVC.swift */; };
 		EE11F25928C4A02600D090DE /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11F25828C4A02600D090DE /* GFButton.swift */; };
 		EE11F25B28C4A34D00D090DE /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11F25A28C4A34D00D090DE /* GFTextField.swift */; };
+		EEB8B51528C4BFD600E1039B /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51428C4BFD600E1039B /* FollowerListVC.swift */; };
+		EEB8B51728C505EA00E1039B /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51628C505EA00E1039B /* GFTitleLabel.swift */; };
+		EEB8B51928C5079C00E1039B /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51828C5079C00E1039B /* GFBodyLabel.swift */; };
+		EEB8B51B28C5087B00E1039B /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51A28C5087B00E1039B /* GFAlertVC.swift */; };
+		EEB8B51D28C50F9A00E1039B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51C28C50F9A00E1039B /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		EE11F25628C4987C00D090DE /* FavouritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListVC.swift; sourceTree = "<group>"; };
 		EE11F25828C4A02600D090DE /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		EE11F25A28C4A34D00D090DE /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		EEB8B51428C4BFD600E1039B /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		EEB8B51628C505EA00E1039B /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		EEB8B51828C5079C00E1039B /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		EEB8B51A28C5087B00E1039B /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
+		EEB8B51C28C50F9A00E1039B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +73,12 @@
 				EE11F24028C3AE8200D090DE /* AppDelegate.swift */,
 				EE11F24228C3AE8200D090DE /* SceneDelegate.swift */,
 				EE11F25428C4985200D090DE /* SearchVC.swift */,
+				EEB8B51428C4BFD600E1039B /* FollowerListVC.swift */,
 				EE11F25628C4987C00D090DE /* FavouritesListVC.swift */,
+				EEB8B51A28C5087B00E1039B /* GFAlertVC.swift */,
+				EEB8B51C28C50F9A00E1039B /* UIViewController+Ext.swift */,
+				EEB8B51628C505EA00E1039B /* GFTitleLabel.swift */,
+				EEB8B51828C5079C00E1039B /* GFBodyLabel.swift */,
 				EE11F25828C4A02600D090DE /* GFButton.swift */,
 				EE11F25A28C4A34D00D090DE /* GFTextField.swift */,
 				EE11F24928C3AE8500D090DE /* Assets.xcassets */,
@@ -146,7 +161,12 @@
 				EE11F25B28C4A34D00D090DE /* GFTextField.swift in Sources */,
 				EE11F25528C4985200D090DE /* SearchVC.swift in Sources */,
 				EE11F25928C4A02600D090DE /* GFButton.swift in Sources */,
+				EEB8B51D28C50F9A00E1039B /* UIViewController+Ext.swift in Sources */,
 				EE11F24128C3AE8200D090DE /* AppDelegate.swift in Sources */,
+				EEB8B51B28C5087B00E1039B /* GFAlertVC.swift in Sources */,
+				EEB8B51928C5079C00E1039B /* GFBodyLabel.swift in Sources */,
+				EEB8B51728C505EA00E1039B /* GFTitleLabel.swift in Sources */,
+				EEB8B51528C4BFD600E1039B /* FollowerListVC.swift in Sources */,
 				EE11F25728C4987C00D090DE /* FavouritesListVC.swift in Sources */,
 				EE11F24328C3AE8200D090DE /* SceneDelegate.swift in Sources */,
 			);
