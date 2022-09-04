@@ -28,7 +28,7 @@ class SearchVC: UIViewController {
     // Hide the nav bar here as viewWillAppear is called each time this view appears, where as viewDidLoad is called once so if you go back to this screen, the nav bar will appear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     
