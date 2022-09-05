@@ -26,6 +26,7 @@
 		EEB8B52C28C52B4300E1039B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B52B28C52B4300E1039B /* ErrorMessage.swift */; };
 		EEB8B52F28C66E0A00E1039B /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B52E28C66E0A00E1039B /* FollowerCell.swift */; };
 		EEB8B53128C66EA000E1039B /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B53028C66EA000E1039B /* GFAvatarImageView.swift */; };
+		EEB8B53328C693CB00E1039B /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B53228C693CB00E1039B /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		EEB8B52B28C52B4300E1039B /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		EEB8B52E28C66E0A00E1039B /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		EEB8B53028C66EA000E1039B /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		EEB8B53228C693CB00E1039B /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				EEB8B52B28C52B4300E1039B /* ErrorMessage.swift */,
+				EEB8B53228C693CB00E1039B /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				EE11F25528C4985200D090DE /* SearchVC.swift in Sources */,
 				EE11F25928C4A02600D090DE /* GFButton.swift in Sources */,
 				EEB8B51D28C50F9A00E1039B /* UIViewController+Ext.swift in Sources */,
+				EEB8B53328C693CB00E1039B /* UIHelper.swift in Sources */,
 				EEB8B53128C66EA000E1039B /* GFAvatarImageView.swift in Sources */,
 				EE11F24128C3AE8200D090DE /* AppDelegate.swift in Sources */,
 				EEB8B51B28C5087B00E1039B /* GFAlertVC.swift in Sources */,
