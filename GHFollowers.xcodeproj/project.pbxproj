@@ -27,6 +27,7 @@
 		EEB8B52F28C66E0A00E1039B /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B52E28C66E0A00E1039B /* FollowerCell.swift */; };
 		EEB8B53128C66EA000E1039B /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B53028C66EA000E1039B /* GFAvatarImageView.swift */; };
 		EEB8B53328C693CB00E1039B /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B53228C693CB00E1039B /* UIHelper.swift */; };
+		EEB8B53B28CA7C9100E1039B /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B53A28CA7C9100E1039B /* GFEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		EEB8B52E28C66E0A00E1039B /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		EEB8B53028C66EA000E1039B /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		EEB8B53228C693CB00E1039B /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		EEB8B53A28CA7C9100E1039B /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +111,13 @@
 		EEB8B51F28C5127200E1039B /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				EEB8B53928CA7C6900E1039B /* Labels */,
+				EEB8B53828CA7C4700E1039B /* ViewControllers */,
+				EEB8B53728CA7C3A00E1039B /* ImageViews */,
+				EEB8B53628CA7C3300E1039B /* TextFields */,
+				EEB8B53528CA7C2C00E1039B /* Buttons */,
+				EEB8B53428CA7C2400E1039B /* Views */,
 				EEB8B52D28C66DDC00E1039B /* Cells */,
-				EEB8B51A28C5087B00E1039B /* GFAlertVC.swift */,
-				EEB8B51828C5079C00E1039B /* GFBodyLabel.swift */,
-				EEB8B51628C505EA00E1039B /* GFTitleLabel.swift */,
-				EE11F25828C4A02600D090DE /* GFButton.swift */,
-				EE11F25A28C4A34D00D090DE /* GFTextField.swift */,
-				EEB8B53028C66EA000E1039B /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -171,6 +173,55 @@
 				EEB8B52E28C66E0A00E1039B /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		EEB8B53428CA7C2400E1039B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8B53A28CA7C9100E1039B /* GFEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEB8B53528CA7C2C00E1039B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EE11F25828C4A02600D090DE /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EEB8B53628CA7C3300E1039B /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				EE11F25A28C4A34D00D090DE /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		EEB8B53728CA7C3A00E1039B /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8B53028C66EA000E1039B /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		EEB8B53828CA7C4700E1039B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8B51A28C5087B00E1039B /* GFAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEB8B53928CA7C6900E1039B /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8B51628C505EA00E1039B /* GFTitleLabel.swift */,
+				EEB8B51828C5079C00E1039B /* GFBodyLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +308,7 @@
 				EEB8B51928C5079C00E1039B /* GFBodyLabel.swift in Sources */,
 				EEB8B52428C5197C00E1039B /* Follower.swift in Sources */,
 				EEB8B51728C505EA00E1039B /* GFTitleLabel.swift in Sources */,
+				EEB8B53B28CA7C9100E1039B /* GFEmptyStateView.swift in Sources */,
 				EEB8B52928C51FEB00E1039B /* NetworkManager.swift in Sources */,
 				EEB8B51528C4BFD600E1039B /* FollowerListVC.swift in Sources */,
 				EE11F25728C4987C00D090DE /* FavouritesListVC.swift in Sources */,
