@@ -23,6 +23,7 @@
 		EE6D144E28CCED7400D6EC57 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D144D28CCED7400D6EC57 /* String+ext.swift */; };
 		EE6D145028CD06E100D6EC57 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D144F28CD06E100D6EC57 /* PersistenceManager.swift */; };
 		EE6D145228CDE89A00D6EC57 /* FavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D145128CDE89A00D6EC57 /* FavouriteCell.swift */; };
+		EE6D145528CDF58E00D6EC57 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D145428CDF58E00D6EC57 /* GFTabBarController.swift */; };
 		EEB8B51528C4BFD600E1039B /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51428C4BFD600E1039B /* FollowerListVC.swift */; };
 		EEB8B51728C505EA00E1039B /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51628C505EA00E1039B /* GFTitleLabel.swift */; };
 		EEB8B51928C5079C00E1039B /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B51828C5079C00E1039B /* GFBodyLabel.swift */; };
@@ -61,6 +62,7 @@
 		EE6D144D28CCED7400D6EC57 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
 		EE6D144F28CD06E100D6EC57 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		EE6D145128CDE89A00D6EC57 /* FavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCell.swift; sourceTree = "<group>"; };
+		EE6D145428CDF58E00D6EC57 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		EEB8B51428C4BFD600E1039B /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		EEB8B51628C505EA00E1039B /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		EEB8B51828C5079C00E1039B /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = ItemInfoVCs;
 			sourceTree = "<group>";
 		};
+		EE6D145328CDF57500D6EC57 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE6D145428CDF58E00D6EC57 /* GFTabBarController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
 		EEB8B51E28C5124D00E1039B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		EEB8B51F28C5127200E1039B /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE6D145328CDF57500D6EC57 /* TabBarControllers */,
 				EEB8B53928CA7C6900E1039B /* Labels */,
 				EEB8B53828CA7C4700E1039B /* ViewControllers */,
 				EEB8B53728CA7C3A00E1039B /* ImageViews */,
@@ -354,6 +365,7 @@
 				EE6D144328CCC50100D6EC57 /* GFItemInfoView.swift in Sources */,
 				EEB8B52F28C66E0A00E1039B /* FollowerCell.swift in Sources */,
 				EEB8B51928C5079C00E1039B /* GFBodyLabel.swift in Sources */,
+				EE6D145528CDF58E00D6EC57 /* GFTabBarController.swift in Sources */,
 				EEB8B54128CCA4DD00E1039B /* GFUserInfoHeaderVC.swift in Sources */,
 				EE6D144E28CCED7400D6EC57 /* String+ext.swift in Sources */,
 				EEB8B53F28CCA0BB00E1039B /* GFError.swift in Sources */,
