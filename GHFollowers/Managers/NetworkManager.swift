@@ -8,6 +8,7 @@
 import UIKit
 
 class NetworkManager {
+    
     static let shared = NetworkManager()
     private let baseUrl = "https://api.github.com/users/"
     let cache = NSCache<NSString, UIImage>()
@@ -25,7 +26,7 @@ class NetworkManager {
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-           
+            
             if let _ = error {
                 completed(.failure(.unableToComplete))
                 return
@@ -40,7 +41,7 @@ class NetworkManager {
                 completed(.failure(.invalidData))
                 return
             }
-
+            
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -67,7 +68,7 @@ class NetworkManager {
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-           
+            
             if let _ = error {
                 completed(.failure(.unableToComplete))
                 return
@@ -82,7 +83,7 @@ class NetworkManager {
                 completed(.failure(.invalidData))
                 return
             }
-
+            
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -118,14 +119,14 @@ class NetworkManager {
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             
             guard let self = self,
-                    error == nil,
-                    let response = response as? HTTPURLResponse, response.statusCode == 200,
-                    let data = data,
-                    let image = UIImage(data: data) else {
-                        completed(nil)
-                        return
+                  error == nil,
+                  let response = response as? HTTPURLResponse, response.statusCode == 200,
+                  let data = data,
+                  let image = UIImage(data: data) else {
+                    completed(nil)
+                    return
             }
-
+            
             self.cache.setObject(image, forKey: cacheKey)
             
             completed(image)

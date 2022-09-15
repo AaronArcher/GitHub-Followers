@@ -19,8 +19,6 @@ class GFTabBarController: UITabBarController {
         UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         
         viewControllers = [createSearchNC(), createFavouritesNC()]
-
-
     }
 
     func createSearchNC() -> UINavigationController {

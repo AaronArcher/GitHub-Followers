@@ -12,11 +12,13 @@ class FavouritesListVC: GFDataLoadingVC {
     let tableView = UITableView()
     var favourites: [Follower] = []
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureVC()
         configureTableView()
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -49,25 +51,28 @@ class FavouritesListVC: GFDataLoadingVC {
             
             switch result {
             case .success(let favourites):
-                
-                if favourites.isEmpty {
-                    self.showEmptyStateView(with: "No favourites?\nAdd one on the follower screen!", in: self.view)
-                } else {
-                    self.favourites = favourites
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                        self.view.bringSubviewToFront(self.tableView)
-                    }
-                }
+                self.updateUI(with: favourites)
                 
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
             }
         }
-
     }
-
+    
+    
+    func updateUI(with favourites: [Follower]) {
+        if favourites.isEmpty {
+            self.showEmptyStateView(with: "No favourites?\nAdd one on the follower screen!", in: self.view)
+        } else {
+            self.favourites = favourites
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.view.bringSubviewToFront(self.tableView)
+            }
+        }
+    }
 }
+
 
 extension FavouritesListVC: UITableViewDataSource, UITableViewDelegate {
    
@@ -77,6 +82,7 @@ extension FavouritesListVC: UITableViewDataSource, UITableViewDelegate {
         cell.set(favourite: favourite)
         return cell
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favourites.count
@@ -104,5 +110,4 @@ extension FavouritesListVC: UITableViewDataSource, UITableViewDelegate {
             self.presentGFAlertOnMainThread(title: "Unable to remove", message: error.rawValue, buttonTitle: "OK")
         }
     }
-    
 }

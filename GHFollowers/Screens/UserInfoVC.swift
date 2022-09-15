@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol UserInfoVCDelegate: class {
+protocol UserInfoVCDelegate: AnyObject {
     func didRequestFollowers(for username: String)
 }
 
@@ -24,6 +24,7 @@ class UserInfoVC: GFDataLoadingVC {
     
     var username: String!
     weak var delegate: UserInfoVCDelegate!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +52,6 @@ class UserInfoVC: GFDataLoadingVC {
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             contentView.heightAnchor.constraint(equalToConstant: 600)
         ])
-        
     }
     
     
@@ -114,7 +114,6 @@ class UserInfoVC: GFDataLoadingVC {
             
             dateLabel.topAnchor.constraint(equalTo: itemView2.bottomAnchor, constant: padding),
             dateLabel.heightAnchor.constraint(equalToConstant: 50)
-            
         ])
     }
     
@@ -130,8 +129,8 @@ class UserInfoVC: GFDataLoadingVC {
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-    
 }
+
 
 extension UserInfoVC: GFRepoItemVCDelegate {
     
@@ -142,8 +141,8 @@ extension UserInfoVC: GFRepoItemVCDelegate {
         }
         presentSafariVC(with: url)
     }
-
 }
+
 
 extension UserInfoVC: GFFollowerItemVCDelegate {
     
@@ -155,6 +154,5 @@ extension UserInfoVC: GFFollowerItemVCDelegate {
         delegate.didRequestFollowers(for: user.login)
         dismissVC()
     }
-    
 }
 

@@ -44,7 +44,6 @@ enum PersistenceManager {
                 completed(error)
             }
         }
-        
     }
     
     
@@ -77,6 +76,5 @@ enum PersistenceManager {
             return .unableToFavourite
         }
     }
-    
     
 }

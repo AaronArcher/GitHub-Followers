@@ -18,6 +18,7 @@ class GFItemInfoView: UIView {
     let titleLabel = GFTitleLabel(textAlignment: .left, fontSize: 14)
     let countLabel = GFTitleLabel(textAlignment: .center, fontSize: 14)
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -73,5 +74,4 @@ class GFItemInfoView: UIView {
         
         countLabel.text = String(count)
     }
-    
 }
