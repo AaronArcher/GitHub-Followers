@@ -83,22 +83,32 @@ class FollowerListVC: GFDataLoadingVC {
         
         showLoadingView()
         isLoadingMoreFollowers = true
-        
-        // Weak self means we don't have a strong reference to self (the FollowersListVC) so this can be removed from memory when not in use
-        NetworkManager.shared.getFollowers(username: username, page: page) { [weak self] result in
-            
-            guard let self = self else { return } // This means we don't have to use optionals on the 'self' below
-            self.dismissLoadingView()
-            
-            switch result {
-            case .success(let followers):
-                self.updateUI(with: followers)
+   
+        Task {
+            do {
+                let followers = try await NetworkManager.shared.getFollowers(username: username, page: page)
+                updateUI(with: followers)
+                dismissLoadingView()
+            } catch {
+                if let gfError = error as? GFError {
+                    presentGFAlert(title: "Uh-Oh...", message: gfError.rawValue, buttonTitle: "OK")
+                } else {
+                    presentDefaultError()
+                }
                 
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Uh-Oh...", message: error.rawValue, buttonTitle: "OK")
+                dismissLoadingView()
             }
             
-            self.isLoadingMoreFollowers = false
+            // This could be simplified if you didn't need specific errors as per below
+//            guard let followers = try? await NetworkManager.shared.getFollowers(username: username, page: page) else {
+//                presentDefaultError()
+//                dismissLoadingView()
+//                return
+//            }
+//
+//            updateUI(with: followers)
+//            dismissLoadingView()
+            
         }
     }
     
